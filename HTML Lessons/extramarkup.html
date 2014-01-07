@@ -1,0 +1,157 @@
+<!--this is a comment in HTML -->
+<!-- doctype declaration for HTML5 -->
+<!DOCTYPE html>
+<!-- meta tags with information about pages -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Extra Markup in HTML files" />
+		<meta name="keywords" content="html, css, web" />
+		<meta name="robots" content="nofollow" />
+		<meta http-equiv="author" content="Peter Liu" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="expires" content="Fri, 31 Jan 2014 23:59:59 GMT" />
+		<style type="text/css">
+			.huge {
+				font-size: 64px;
+			}
+			.red {
+				color: red;
+			}
+			#kitten {
+				color: blue;
+			}
+		</style>
+		<title>Some Extra Markup</title>
+	</head>
+
+	<body>
+		<!-- divs to group text and elements in a block -->
+		<div>
+			<!-- Block Elements - appear on a new line -->
+			<h1>This is a block element</h1>
+			<p>This is a block element</p>
+			<ul>
+				<li>This is a block element</li>
+				<li>This is a block element</li>
+				<li>This is a block element</li>
+				<li>This is a block element</li>
+			</ul>
+			<!-- end block elements -->
+			<hr>
+			<!-- Inline elements - appear on the same line -->
+			<p>
+				<em>Inline element.</em> 
+				<strong>Also inline element.</strong> 
+				<b>You guessed it: inline element.</b> 
+				<i>Still a inline element.</i> 
+				<a href="#">Even this link is a inline element.</a> 
+				<img src="http://placekitten.com/g/100/100" alt="An adorable little kitten" title="Cute kitten" />And this kitten.
+			</p>
+			<!-- end inline elements -->
+		</div>
+		<!-- end div  -->
+		<hr>
+		<!-- begin div -->
+		<div>
+			<!-- Class and ID Attribute -->
+			<p class="huge">This paragraph has a class of huge</p>
+			<p class="huge red">This paragraph has a class of huge and red</p>
+			<p id="kitten">This paragraph has an ID of kitten</p>
+			<!-- end class and id examples -->
+		</div>
+		<!-- end div -->	
+		<!-- begin div -->
+		<div>	
+			<!-- spans to group text and elements inline -->
+			<!-- should be used to differentiate word from surrounding text -->
+			<p>For example, if I wanted <span class="huge">these words to be huge</span>, I would use a span. Same if I wanted to <span class="red">make these words red</span>.</p>
+			<!-- end span example -->
+		</div>
+		<!-- end div -->
+
+		<!-- begin div -->
+		<div>
+			<!-- iframes are like little windows that has been cut into your window; it stands for inline frame -->
+			<!-- this is an example using Google maps; it looks scary because it was copied from Google Maps' code -->
+			<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=4400+Vestal+Parkway+East,+Vestal,+NY&amp;daddr=&amp;hl=en&amp;geocode=&amp;aq=0&amp;oq=4400+vestal+&amp;sll=40.697488,-73.979681&amp;sspn=1.096351,0.773163&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;iwloc=ddw0&amp;ll=42.095411,-75.967459&amp;spn=0.006295,0.008484&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=4400+Vestal+Parkway+East,+Vestal,+NY&amp;daddr=&amp;hl=en&amp;geocode=&amp;aq=0&amp;oq=4400+vestal+&amp;sll=40.697488,-73.979681&amp;sspn=1.096351,0.773163&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;iwloc=ddw0&amp;ll=42.095411,-75.967459&amp;spn=0.006295,0.008484" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+		</div>
+		<!-- end div -->
+		<!-- List of a Few Escape Characters -->
+		<!-- There are some special characters that are used in HTML code such as < and >; you want to use escape characters so they appear properly in your webpage. These are only a few of them; Google when you need them. -->
+		<div>
+			<table>
+				<tr>
+					<th></th>
+					<th>Symbol 1</th>
+					<th>Symbol 2</th>
+				</tr>
+				<tr>
+					<td>Less-than</td>
+					<td>&lt;</td>
+					<td>&#60;</td>
+				</tr>
+				<tr>
+					<td>Greater-than</td>
+					<td>&gt;</td>
+					<td>&amp;</td>
+				</tr>
+				<tr>
+					<td>Ampersand</td>
+					<td>&amp;</td>
+					<td>&#86;</td>
+				</tr>
+				<tr>
+					<td>Quotation Mark</td>
+					<td>&quot;</td>
+					<td>&#34;</td>
+				</tr>
+				<tr>
+					<td>Left Single Quote</td>
+					<td>&lsquo;</td>
+					<td>&#8216;</td>
+				</tr>
+				<tr>
+					<td>Right Single Quote</td>
+					<td>&rsquo;</td>
+					<td>&#8217;</td>
+				</tr>
+				<tr>
+					<td>Left Double Quotes</td>
+					<td>&ldquo;</td>
+					<td>&#8220;</td>
+				</tr>
+				<tr>
+					<td>Right Double Quote</td>
+					<td>&rdquo;</td>
+					<td>&#8221;</td>
+				</tr>
+				<tr>
+					<td>Copyright</td>
+					<td>&copy;</td>
+					<td>&#169;</td>
+				</tr>
+				<tr>
+					<td>Registered Trademark</td>
+					<td>&reg;</td>
+					<td>&#174;</td>
+				</tr>
+				<tr>
+					<td>Trademark</td>
+					<td>&trade;</td>
+					<td>&#8482;</td>
+				</tr>
+				<tr>
+					<td>Multiplication</td>
+					<td>&times;</td>
+					<td>&#215;</td>
+				</tr>
+				<tr>
+					<td>Division</td>
+					<td>&divide;</td>
+					<td>&#247;</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

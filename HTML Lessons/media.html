@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML5 Video and Audio</title>
+	</head>
+
+	<body>
+		<div>
+			<!-- Embedding a Video -->
+			<video src="videos/video.mp4"
+				poster="http://placekitten.com/g/400/300"
+				width="400" height="300"
+				preload="none"
+				controls
+				loop
+				autoplay
+			>
+			<!-- preload can also be autoplay or metadata -->
+		</div>
+		<!-- Embedding Audio -->
+		<div>
+			<audio src="audio/audio.ogg" 
+				controls 
+				autoplay 
+				preload 
+				loop><p>This browser is probably IE if it doesn't support this audio format.</audio>
+		</div>
+	</body>
+</html>
