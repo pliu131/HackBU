@@ -1,11 +1,17 @@
+/* Styling for Tables*/
+/* begin personal taste CSS */
+/* this font comes from Google Fonts; I linked the stylesheet in the HTML */
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+/* end personl taste */
 
+/* tables will appear in same line even though they are block elements */
 table {
 	display: inline-block;
 }
 
+/* setting fixed size for table */
 .exampleOne table {
 	width: 640px;
 }
@@ -28,22 +34,25 @@ table {
 	background-color: #efefef;
 }
 
-/*best practice: change color on hover*/
+/*best practice: change color on hover for nice UI */
 .exampleOne tr:hover {
 	background-color: #c3e6ef;
 }
 
-/*best practice: align numbers to thr right*/
+/*best practice: align numbers to the right*/
 .exampleOne .gross {
 	text-align: right;
 }
 
 /*EXAMPLE TWO*/
+/* creating border and padding for visibility */
 .exampleTwo td {
 	border: 1px solid red;
 	padding: 20px;
 }
 
+/* For empty cells, you can show to show the border around it 
+or pretend it doesn't exist (how depressing) */
 table.show {
 	empty-cells: show;
 }
@@ -53,11 +62,14 @@ table.hide {
 }
 
 /*EXAMPLE THREE*/
+/* creating border and padding for visibility */
 .exampleThree td {
 	border: 1px solid blue;
 	padding: 20px;
 }
 
+/* when you have cells collapse onto each other 
+or separate from each other (also depressing) */
 table.separate {
 	border-spacing: 20px 20px;
 }

@@ -1,30 +1,61 @@
+/* Styling for Lists */
 body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.unordered li {
-	/* change the style of the bullets */
-	list-style-type: none;
-	/* list-style-type: disc; */
-	/* list-style-type: circle; */
-	/* list-style-type: square; */
-	/* you can also add images for bullets */
-	/* uncomment below for kitty bullets */
-	/* list-style-image: url("http://placekitten.com/g/100/100"); */
+div.inlineLists div{
+	display: inline-block;
 }
 
-.ordered li {
-	/*list-style-type: decimal;*/
-	/*list-style-type: decimal-leading-zero;*/
-	/*list-style-type: lower-alpha;*/
-	/*list-style-type: upper-alpha;*/
-	/*list-style-type: lower-roman;*/
-	/*list-style-type: upper-roman;*/
+/* change the style of the markers for unordered lists */
+.unordered1 li {
+	list-style-type: none;
+}
+.unordered2 li {
+	list-style-type: disc; 
+}
+.unordered3 li {
+	list-style-type: circle; 
+}
+.unordered4 li {
+	list-style-type: square; 
+}
+.unordered5 li {
+	/* you can also add images for bullets */
+	/* uncomment below for kitty bullets */
+	list-style-image: url("http://placekitten.com/g/10/10"); 
+}
 
+/* change the style of the markers for ordered lists */
+.ordered1 li {
+	list-style-type: decimal;
+}
+.ordered2 li {
+	list-style-type: decimal-leading-zero; 
+}
+.ordered3 li {
+	list-style-type: lower-alpha; 
+}
+.ordered4 li {
+	list-style-type: upper-alpha; 
+}
+.ordered5 li {
+	list-style-type: lower-roman; 
+}
+.ordered6 li {
+	list-style-type: upper-roman; 
+}
+
+/* EXAMPLE ONE */
+.exampleOne {
 	/* can position where the markers are */
 	list-style-position: inside;
-	/*list-style-position: outside;*/
+}
+
+/* EXAMPLE TWO */
+.exampleTwo {
+	list-style-position: outside;
 }
 
 /*all of this can be done in short hand using list-style*/
-/*list-style: inside disc;*/
+/*list-style: inside disc;
