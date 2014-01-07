@@ -1,0 +1,68 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+table {
+	display: inline-block;
+}
+
+.exampleOne table {
+	width: 640px;
+}
+
+/*best practice: give cells padding for readability*/
+.exampleOne th, td {
+	padding: 10px;
+}
+
+/*best practice: distinguish headings*/
+.exampleOne th {
+	text-transform: uppercase;
+	border-bottom: 2px solid black;
+	border-top: 1px solid gray;
+	text-align: left;
+}
+
+/*best practice: shade alternate rows*/
+.exampleOne tr.even {
+	background-color: #efefef;
+}
+
+/*best practice: change color on hover*/
+.exampleOne tr:hover {
+	background-color: #c3e6ef;
+}
+
+/*best practice: align numbers to thr right*/
+.exampleOne .gross {
+	text-align: right;
+}
+
+/*EXAMPLE TWO*/
+.exampleTwo td {
+	border: 1px solid red;
+	padding: 20px;
+}
+
+table.show {
+	empty-cells: show;
+}
+
+table.hide {
+	empty-cells: hide;
+}
+
+/*EXAMPLE THREE*/
+.exampleThree td {
+	border: 1px solid blue;
+	padding: 20px;
+}
+
+table.separate {
+	border-spacing: 20px 20px;
+}
+
+table.collapse {
+	border-spacing: collapse;
+}
+

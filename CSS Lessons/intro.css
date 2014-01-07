@@ -1,0 +1,76 @@
+/* Introduction to CSS */
+/* Key to understanding CSS is imagining
+that every HTML element (regardless of being inline
+or block) is inside of a box. CSS styles the boxes, 
+by adding margins or borders, as well as the content inside the box, 
+such as changing colors, font sizes, and fonts.
+They contain a selector, which refers to the element,
+and a declaration, which tell the browser how the element should look:
+	selector: declaration;
+For example:
+	p {
+		font-family: Arial;
+		color: red;
+		(this is a property: value; pair)
+	}
+sets the font family of all paragraphs to Arial.
+*/
+
+/* Using External CSS */
+/* In the HTML head element:
+	<link href="style.css" rel="stylesheet">
+	style.css is a CSS file, like how index.html is an HTML file.
+	rel stands for relation, so the HTML knows this is a stylesheet.
+*/
+
+/* Using Internal CSS */
+/* In HTML, place CSS in style tags:
+	<style>
+		p {
+			font-family: Arial;
+			color: red;
+		}
+	</style>
+*/
+
+/* CSS Selectors */
+/* Universal Selector targets all elements */
+* {}
+/* Type Selector matches element names */
+h1, h2, h3 {}
+/* Class Selector matches class; */
+.header {}
+h1.header {}
+/* ID Selector matches ID */
+#intro {}
+/* Child Selector matches direct child of element */
+li>a {}
+/* Descendant Selector matches any children of element */
+p a {}
+/* Adjacent Sibling Selector matches first sibling of element */
+h1+p {}
+/* General Sibling Selector matches any siblings of element */
+h1~p {}
+
+/* Why are they called Cascading Stylesheets*/
+/* Last Rule - latter takes precendence */
+p { color: red; }
+p#intro { color: blue; }
+/* Specificity - more specific takes precedence */
+p { color: red; }
+p a { color: blue; }
+/* Can add !important; to indicate importance */
+
+/* Inheritance does not apply to all properties. 
+For example, every element inside of body will have the same font-family.
+However, they will share a background-color or border */
+body { 
+	font-family: Helvetica, sans-serif;
+	background-color: gray;
+}
+
+/* Using External Stylesheets for the most part,
+except if changes are small and don't require an external style sheet,
+like changing the style of a single element. Using external CSS allows
+you to apply consistent style throughout your pages
+*/
