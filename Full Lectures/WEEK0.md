@@ -96,6 +96,8 @@ Perhaps the biggest example of open source technology we will be using in this c
 
 
 ## Frontend/Backend
+<img src="http://4b93n32qwvjj3ddn5w3yhffoas6.wpengine.netdna-cdn.com/wp-content/uploads/2012/08/term-frontendvsbackend.jpeg">
+
 Frontend is everything you see, which includes HTML/CSS/JavaScript. The backend is what makes a web application happen. A typical setup is an application, a web server, and a database. For example, when you are a booking a flight, you need to check prices, book itineraries, and charge credit cards. All that happens on the backend. A web server sends a note to the application that you want to see all the flight to Chicago. The application looks up the flights in the DB and puts together a web page that lists them. Sends that web page through the server.
 
 Database stores your info. Could be MySQL, MongoDB, PostgreSQL. Server side languages could be Python, Ruby, PHP, or interestingly enough now, Javascript.
