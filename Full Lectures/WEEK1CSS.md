@@ -9,12 +9,6 @@ CSS applies rules for the elements in HTML and allow us to change things like fo
 
 CSS is similar to HTML in that it is a text file that is understood by the web browser, and instead of being saved as a .html file, it is saved as a .css file. 
 
-## The Box Model (Think Inside the Box)
-Before we start talking about CSS syntax, we will talk about the box model, which just makes it easier to understand how to use CSS.
-
-* INSERT DIAGRAM OF BOX MODEL 
-(Important not to confuse this with inline or block elements. Everything is inside a box.)
-
 ## CSS Selectors, Properties, and Values
 Here's an example we saw earlier:
 

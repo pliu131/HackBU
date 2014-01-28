@@ -13,8 +13,6 @@ Most of you have probably taken an introductory class in programming. I will tel
 Everything in Ruby is an object. Everything. What does this mean? Please explain it.
 
 ## Variables
-## 
-
 Codeacademy Stuff
 Control Flow
 Introduction to Ruby
