@@ -1,4 +1,7 @@
 # Parts of the Web
+## Basic Process of Getting a Webpage
+<img src="http://en.flossmanuals.net/firefox/ch005_the-internet/_booki/firefox/static/CircumventionTools-howsthenetworks-net-en.png" />
+
 ## IP Address
 Is an address/phone number for your computer. Consists of four sets of octets (256 numbers, from 0-255). It's the way that your computer knows what computer to ask for information from.
 Since the internet and the number of devices are growing, we need a new version of IP address, now IPv6 (vs current IPv4).
