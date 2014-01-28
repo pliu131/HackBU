@@ -1,27 +1,38 @@
 # CSS Color
 There are multiple ways of specifying color in CSS.
 One way is through the predefined name for a color. You can Google these.
+    
     body {
       color: red;
     }
+
 Another way is to use a hex-code. I don't want to go into too much detail about these, but these specify the amount of red, green, and blue in the color:
+    
     body {
       color: #FAFAFA;
     }
+
 There is also another way to specify the amount of red, green, and blue in a color. These values range from 0 to 255.
+    
     body {
       color: rgb(100,100,100)
     }
+
 We can also define a color using hue, saturation, and lightness:
+    
     body {
       color: hsl(0, 0%, 78%);
     }
+    
 Hue is expressed as an angle from 0 to 360, and saturation and lightness are both expressed in percentages.
 
 There are also two types of color we can specify: foreground color and background color.
 Foreground color is simply named color. This changes the color of the text.
+
     color: red;
+
 Background color is called background-color. The changes the color behind the text.
+
     background-color: blue;
 
 # CSS Text Properties
@@ -30,11 +41,13 @@ Background color is called background-color. The changes the color behind the te
 This allows you to specify which font you would like to use. It is important to list more than one font in the case that the font you specified is not installed on the user's machine.
 
 Using font-family tells the browser to look for the specified font on the user's computer.
-  body {
-    font-family: Helvetica, Arial, sans-serif;
-  }
+
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+    }
 
 Specifying a font-face lets use choose a font, given we know where to get it. It is commonly used for web fonts, like Google Fonts. Here is an example of how to include a Google font:
+
     @font-face {
       font-family: 'Open Sans';
       src: url('http://fonts.googleapis.com/css?family=Open+Sans');
@@ -42,15 +55,18 @@ Specifying a font-face lets use choose a font, given we know where to get it. It
 
 You can specify the font name and provide a URL for where to find the font.
 Then you can use that font in the font-family property:
-  body {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  }
+    
+    body {
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    }
 
 There is also another way to do this that is specified on the Google Fonts website.
 Include this in the head tag of the HTML page:
+
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 This takes care of setting @font-face in your CSS. Then you can continue to do:
+
     body {
       font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     }
@@ -59,39 +75,45 @@ This takes care of setting @font-face in your CSS. Then you can continue to do:
 There are three ways of specifying the font size, and these measurements are also used in different properties such as the height and width of other elements
 
 We can use pixels.
-  body {
-    font-size: 16px;
-  }
+
+    body {
+      font-size: 16px;
+    }
 
 We can also use percentages and ems, which are relative to the size of body font.
-  font-size: 200%; /* 32px */
-  font-size: 1.5em; /* 24px */
+
+    font-size: 200%; /* 32px */
+    font-size: 1.5em; /* 24px */
 
 ### font-weight
 There are five different values for the weight of a font. 
-  .font-weight {
-    font-weight: bold; 
-    /* font-weight: normal; */
-    /* font-style: normal; */
-    /* font-style: italic; */
-    /* font-style: oblique; */
-  }
+  
+    .font-weight {
+      font-weight: bold; 
+      /* font-weight: normal; */
+      /* font-style: normal; */
+      /* font-style: italic; */
+      /* font-style: oblique; */
+    }
 
 ## Kerning and Leading
 ### line-height
 Kerning describes the spacing between the lines of text.
+
     .line-height {
       line-height: 1.4em;
     }
 
 ### letter-spacing
 Leading describes the spacing between letters.
+
     .letter-spacing {
       letter-spacing: 0.2em;
     }
 
 ### word-spacing
 Tracking describes the spacing between words.
+
     .word-spacing {
       word-spacing: 1em;
     }
@@ -99,6 +121,7 @@ Tracking describes the spacing between words.
 ## Alignment
 ### text-align
 This is the horizontal alignment of text on the page.
+
     .text-align {
       text-align: left;
       /* text-align: right; */
@@ -108,6 +131,7 @@ This is the horizontal alignment of text on the page.
 
 ### vertical-align
 This is the vertical alignment of text on the page.
+
     .vertical-align {
       /* vertical-align: baseline; */
       /* vertical-align: sub; */
@@ -122,6 +146,7 @@ This is the vertical alignment of text on the page.
 ## Other Stuff
 ### text-transform
 We can easily change the case of text using CSS.
+
     .text-transform {
       text-transform: uppercase;
       /* text-transform: lowercase; */
@@ -130,6 +155,7 @@ We can easily change the case of text using CSS.
 
 ### text-decoration
 We can also add decoration to text easily.
+
     .text-decoration {
       text-decoration: none;
       /* text-decoration: underline; */
@@ -144,6 +170,7 @@ First value: how far left or right
 Second value: how far up or down
 Third value (optional): amount of blur
 Fourth value: color
+
     p.shadow {
       text-shadow: 1px 1px 5px #111111;
     }
@@ -154,6 +181,7 @@ Pseudo elements can let us pick out certain parts of text, and style our interac
 
 ### first-letter and first-line
 As the name suggests, it will let us pick out the first letter or first line from a body of text.
+
     p.intro:first-letter {
       font-weight: 48px;
     }
@@ -163,6 +191,7 @@ As the name suggests, it will let us pick out the first letter or first line fro
 
 ### link, visited
 These let you choose links that have been visited and links that haven't been visited.
+
     a:link {
       color: gray;
     }
@@ -172,14 +201,19 @@ These let you choose links that have been visited and links that haven't been vi
 
 ### hover, active, focus
 hover is used when the mouse is hovering over an element.
+
     h1:hover {
       font-size: 12px;
     }
+    
 Active is used when the element is being used by the user. This is used for links or buttons.
+
     a:active {
       color: red;
     }
+    
 Focus is where the focus is. You think about when you press tab on a website to go through a form, this is where the focus lies.
+
     input:focus {
       border: 1px red;
     }
@@ -187,6 +221,7 @@ Focus is where the focus is. You think about when you press tab on a website to 
 # CSS List Properties
 ## The Style of the Bullets
 You can change what the bullets next to list items look like.
+
     .unordered1 li {
       list-style-type: none;
     }
@@ -207,6 +242,7 @@ You can change what the bullets next to list items look like.
 
 ## How to Count List Items
 Don't like numbers? We have some options for you.
+
     .ordered1 li {
     list-style-type: decimal;
     }
@@ -229,19 +265,22 @@ Don't like numbers? We have some options for you.
 ## Changing the Position of the Bullets
 The bullets can either be inside the line or outside the line.
 EXAMPLE ONE
+
     .exampleOne {
       /* can position where the markers are */
       list-style-position: inside;
     }
 
 EXAMPLE TWO
+
     .exampleTwo {
       list-style-position: outside;
     }
 
 ## Shorthand
 All of this can be done in short hand using list-style
-    /*list-style: inside disc;
+
+    list-style: inside disc;
 
 # Work on your portfolios!
 - Find a font or two that you'd like to use on Google fonts or any other webfont website, and use them in your website.
