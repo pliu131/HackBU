@@ -424,5 +424,9 @@ The third type of input is the multiple select box. They are wrapped in a select
 
 The last type of input is a dropdown menu. It is like the multiple select box, but you cannot choose more than one option.
 
+Then there are submit buttons!
+There are file upload buttons and submit buttons. There are also hidden forms.
+
+
 ### Video and Music
 We will not discuss this in total detail, since most music or video hosting websites contain an embed URL.
