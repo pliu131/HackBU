@@ -61,7 +61,7 @@ Tables are essentially Excel sheets. They are comprised of columns and rows of c
     
     <table>
         <tr>
-    		<td>1</td>
+        	<td>1</td>
     		<td>2</td>
     		<td>3</td>
     	</tr>
@@ -427,6 +427,74 @@ The last type of input is a dropdown menu. It is like the multiple select box, b
 Then there are submit buttons!
 There are file upload buttons and submit buttons. There are also hidden forms.
 
+    <!-- file upload field -->
+    	Upload a picture of yourself at your favorite store<br>
+		<input type="file" name="photo" /><br>
+		<input type="submit" name="upload" value="Upload" /><br>
+		<br>
+		<!-- submit button -->
+		Here is a submit:<br>
+		<input type="submit" name="submit" value="Submit" /><br>
+		<!-- submit button with image -->
+		This is how you can use images as submits:<br>
+		<input type="image" src="http://placekitten.com/g/100/20" width="100" height="20" /><br>
+		<!-- button -->
+		This is a button that uses an image:<br>
+		<button><img src="http://placekitten.com/g/100/100" alt="kitty button" ><br>Kitty!</button><br>
+    
+<!-- file upload field -->
+Upload a picture of yourself at your favorite store<br>
+<input type="file" name="photo" /><br>
+<input type="submit" name="upload" value="Upload" /><br>
+<br>
+<!-- submit button -->
+Here is a submit:<br>
+<input type="submit" name="submit" value="Submit" /><br>
+<!-- submit button with image -->
+This is how you can use images as submits:<br>
+<input type="image" src="http://placekitten.com/g/100/20" width="100" height="20" /><br>
+<!-- button -->
+This is a button that uses an image:<br>
+<button><img src="http://placekitten.com/g/100/100" alt="kitty button" ><br>Kitty!</button><br>
+
 
 ### Video and Music
 We will not discuss this in total detail, since most music or video hosting websites contain an embed URL.
+
+
+### HTML5 Email and Search Inputs
+Much like the other inputs we encountered, there are also search inputs and email inputs. These look exactly the same as other inputs on a computer, but on mobile devices, you will see that you are provided different keyboard options.
+
+    <fieldset>
+    	<legend>HTML5: Email and URL Input</legend>
+    	<!-- email field -->
+    	<label>Email:<input type="email" name="email"></label><br>
+    	<!-- url field -->
+    	<label>Your Website:<input type="url" name="website"></label>
+    </fieldset>
+    <!-- fieldset end -->
+    <br>
+    <!-- fieldset start -->
+    <fieldset>
+    	<legend>HTML5: Search Input</legend>
+    		<!-- search field -->
+    		<label>Search!<input type="search" name="search" placeholder="Enter search query"></label>
+    		<input type="submit" value="Search">
+    </fieldset>
+    
+<fieldset>
+    <legend>HTML5: Email and URL Input</legend>
+	<!-- email field -->
+	<label>Email:<input type="email" name="email"></label><br>
+	<!-- url field -->
+	<label>Your Website:<input type="url" name="website"></label>
+</fieldset>
+<!-- fieldset end -->
+<br>
+<!-- fieldset start -->
+<fieldset>
+	<legend>HTML5: Search Input</legend>
+		<!-- search field -->
+		<label>Search!<input type="search" name="search" placeholder="Enter search query"></label>
+		<input type="submit" value="Search">
+</fieldset>
