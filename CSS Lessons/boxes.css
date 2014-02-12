@@ -1,0 +1,151 @@
+section {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Box Dimensions */
+div.redbox {
+  height: 400px;
+  width: 400px;
+  background-color: red;
+  margin: 10px auto 10px auto;
+}
+
+div.greenbox {
+  height: 50%;
+  width: 50%;
+  background-color: green;
+}
+
+p {
+  width: 400px;
+  padding: 10px;
+}
+
+/* Limiting Width */
+p.short-story {
+  min-width: 100px;
+  max-width: 300px;
+}
+
+/* Limiting Height */
+p.short-story2 {
+  min-height: 20px;
+  max-height: 100px;
+}
+
+/* Overflowing Content */
+p.hide {
+  overflow: hidden;
+}
+
+p.scroll {
+  overflow: scroll;
+}
+
+/* Border, Margin, and Padding */
+/* Border Width */
+p.box0 {
+  /* can set this as thin, medium, or thick, or with pixels! */
+  border-top-width: thin;
+  border-right-width: medium;
+  border-bottom-width: thick;
+  border-left-width: 3px;
+  /* can also set it with short hand, going in that order */
+  /* border-width: thin medium thick 3px; */
+  /* can also set one value for all border-widths */
+  /* border-width: 1px; */
+}
+
+/* Border Style */
+p.sbox1 {}
+p.sbox2 {}
+p.sbox3 {}
+p.sbox4 {}
+p.sbox5 {}
+p.sbox6 {}
+p.sbox7 {}
+p.sbox8 {}
+
+/* Border Color */
+p.cbox0 {
+  border-top-color: red;
+  border-right-color: green;
+  border-bottom-color: blue;
+  border-top-color: black;
+  /* can also set with shorthand */
+  /* border-color: red green blue black; */
+}
+/* Shorthand for everything! */
+p.superbox {
+  border: 3px dotted green;
+}
+
+p.padded {
+  padding-top: 10px; 
+  padding-right: 8px;
+  padding-bottom: 6px;
+  padding-left: 4px;
+  /* can also set with shorthand */
+  /* padding: 10px 8px 6px 4px */
+  /* or for equal padding */
+  /* padding: 10px; */
+}
+
+p.marginal {
+  border: 1px solid black;
+  margin-top: 10px; 
+  margin-right: 8px;
+  margin-bottom: 6px;
+  margin-left: 4px;
+  /* can also set with shorthand */
+  /* margin: 10px 8px 6px 4px */
+  /* or for equal padding */
+  /* margin: 10px; */
+}
+
+/* Centering Content */
+p.not-centered {
+  width: 500px;
+  padding: 50px;
+  border: 2px solid black;
+}
+
+p.centered {
+  /* need to specify width for this to work */
+  width: 500px;
+  padding: 50px;
+  border: 2px solid black;
+  /* set right and left margins to 0*/
+  margin: 10px auto 10px auto;
+}
+
+/* Changing Inline Display */
+ul.navbar > li {
+  display: inline;
+  margin-right: 15px;
+  border: 1px solid black;
+  padding: 2px;
+}
+
+li.none {
+  /* acts as if it isn't there */
+  display: none;
+}
+
+span {
+  display: block;
+}
+
+/* Hiding Boxes */
+li.hidden {
+  /* different because it shows blank space where element should be */
+  visibility: hidden;
+}
+
+/* can also do: */
+/* display: inline-block; */
+/* this makes them appear inline but will behave like blocks */
+
+/* I could add other stuff. But I won't (like box-shadow, border-radius */
