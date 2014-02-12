@@ -269,6 +269,92 @@ You can put lists inside of lists! Listception!
 	</li>
 </ul>
 
+## Links
+Links are specified by the "a" or the "anchor" tags. Each has an attribute called href, or hyperlink reference, which refers to the URL, or the Universal Resource Locator, it will go to when clicked. There are two types of URLs: one is a relative URL and one is an absolute URL. Here are some examples.
+
+This is a relative URL. It points to a webpage relative to the page we are currently on. Thought of in a different way, it refers to a page in the same directory that we are working in.
+    
+    <a href="index.html">This is a link to the homepage.</a>
+    <a href="about/contact.html">This is a link to the contact page. It is within a folder in the root directory called "about".</a>
+    <a href="../other.html">This is a link to another page that is in a folder before the present working directory.</a>
+    
+<a href="index.html">This is a link to the homepage.</a><br>
+<a href="about/contact.html">This is a link to the contact page. It is within a folder in the root directory called "about".</a><br>
+<a href="../other.html">This is a link to another page that is in a folder before the present working directory.</a><br>
+
+There are also absolute URLs. These refer to the domain name of IP address of the web site you are looking for, and can point to them from anywhere, even if it is not a web page relative to the one you are currently on.
+
+    <a href="https://google.com/">Google</a>
+    <a href="https://facebook.com/">Facebook</a>
+    <a href="https://twitter.com/">Twitter</a>
+    
+<a href="https://google.com/">Google</a>
+<a href="https://facebook.com/">Facebook</a>
+<a href="https://twitter.com/">Twitter</a>
+
+Note that these links are prefixed with "https://". HTTP stands for Hypertext Transfer Protocol, and the S simply means that it is secure. We will talk about this later, but this just lets the browser know that we should use a certain protocol when trying to get web pages.
+
+## Images
+Images are embedded into web pages very similar to the way that links/anchor tags. They must have a src attribute that points to the location of the image, and should have a couple of extra attributes to aid those with disabilities or those who have disabled the loading of images/have a slower internet connect.
+
+src attributes, like href attributes, can point to resources relative or absolute.
+The title attribute is shown when a mouse hovers over the image.
+The alt attribute is read outloud when the client is visually impaired.
+
+For example, this photo uses an image that is not stored in the present working directory. 
+
+    <img src="http://placekitten.com/g/300/300" alt="An adorable little kitten" title="Cute kitten" />
+
+<img src="http://placekitten.com/g/300/300" alt="An adorable little kitten" title="Cute kitten" />
+
+This example, on the other hand, uses an image that is stored in the images folder of the root directory.
+
+    <img src="images/kitten.jpg" alt="An adorable little kitten" title="Cute kitten" />
+    
+<img src="http://placekitten.com/g/300/300" alt="An adorable little kitten" title="Cute kitten" />
+
+### HTML5 Figure
+HTML5 introduced a new element, called a figure. This was made to group images and related content, like image captions, together in one element. The figure tag wraps all of the content, you use a regular img tag for the actual image, and you add a caption to the image using a figcaption element.
+
+    <figure>
+        <img src="http://placekitten.com/g/300/300" alt="An adorable little kitten" title="Cute kitten" /><br>
+        <figcaption>This is an adorable little kitten.</figcaption>
+    </figure>
+    
+<figure>
+    <img src="http://placekitten.com/g/300/300" alt="An adorable little kitten" title="Cute kitten" /><br>
+    <figcaption>This is an adorable little kitten.</figcaption>
+</figure>
+
+## Grouping Related Elements Together
+### Divs and Spans
+Divs are used to group text and elements inside a block. For this example, we are using it for a navigation menu.
+
+  <div id="header">
+    <h1>Welcome to My Website</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+<div id="header">
+  <h1>Welcome to My Website</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+Spans are used to group text and elements within an inline element. For example, if you wanted to add a class attribute to the title of a book.
+
+  <p>I really liked reading that one book, <span class="title">To Kill a Mockingbird</span></p>
+
+<p>I really liked reading that one book, <span class="title">To Kill a Mockingbird</span></p>
 
 Now that we've learned about these elements, we will use them for your own personal benefit...not in an evil way. 
 
