@@ -85,7 +85,7 @@ Blockquotes are block elements (as you can assume), and regular quotes are inlin
     <blockquote>
     <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
     </blockquote>
-	<p>Samuel L. Jackson said <q>English, motherfucker! Do you speak it?!<q></p>
+	<p>Samuel L. Jackson said <q>English, mother******! Do you speak it?!<q></p>
 
 <blockquote>
   <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
@@ -93,8 +93,6 @@ Blockquotes are block elements (as you can assume), and regular quotes are inlin
 </blockquote>
 
 <p>Samuel L. Jackson said <q>English, motherfucker! Do you speak it?!<q></p>
-
-
 
 ## Abbreviations and Acronyms 
 These must contain a title attribute. What is contained in these attributes will be shown in a tooltip when you hover over the element.
