@@ -350,7 +350,7 @@ Divs are used to group text and elements inside a block. For this example, we ar
 
 Spans are used to group text and elements within an inline element. For example, if you wanted to add a class attribute to the title of a book.
 
-  <p>I really liked reading that one book, <span class="title">To Kill a Mockingbird</span></p>
+    <p>I really liked reading that one book, <span class="title">To Kill a Mockingbird</span></p>
 
 <p>I really liked reading that one book, <span class="title">To Kill a Mockingbird</span></p>
 
