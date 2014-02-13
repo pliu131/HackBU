@@ -328,15 +328,15 @@ HTML5 introduced a new element, called a figure. This was made to group images a
 ### Divs and Spans
 Divs are used to group text and elements inside a block. For this example, we are using it for a navigation menu.
 
-  <div id="header">
-    <h1>Welcome to My Website</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
+    <div id="header">
+      <h1>Welcome to My Website</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
 
 <div id="header">
   <h1>Welcome to My Website</h1>
