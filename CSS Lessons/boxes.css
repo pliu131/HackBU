@@ -59,14 +59,30 @@ p.box0 {
 }
 
 /* Border Style */
-p.sbox1 {}
-p.sbox2 {}
-p.sbox3 {}
-p.sbox4 {}
-p.sbox5 {}
-p.sbox6 {}
-p.sbox7 {}
-p.sbox8 {}
+p.sbox1 {
+  border-style: solid;
+}
+p.sbox2 {
+  border-style: dotted;
+}
+p.sbox3 {
+  border-style: dashed;
+}
+p.sbox4 {
+  border-style: double;
+}
+p.sbox5 {
+  border-style: groove;
+}
+p.sbox6 {
+  border-style: ridge;
+}
+p.sbox7 {
+  border-style: inset;
+}
+p.sbox8 {
+  border-style: outset;
+}
 
 /* Border Color */
 p.cbox0 {
