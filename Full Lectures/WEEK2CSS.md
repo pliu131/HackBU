@@ -1,7 +1,6 @@
 # More CSS! All the CSS!
 ## Tables
 ## Forms
-## Links
 ## Images (should be in week 1, but I'm going to type it out here)
 ## Boxes
 Recall that you should think inside the box in the context of HTML and CSS, and think of every element being wrapped inside of a box. A box has dimensions that include height and width, as a box very well should.
