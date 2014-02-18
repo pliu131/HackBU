@@ -1,4 +1,4 @@
-# THERE IS MISSING CONTENT HERE. Stupid StackEdit didn't save my changes.
+# THERE IS MISSING CONTENT HERE. Stupid StackEdit didn't save my changes
 # HTML Text, Lists, and Images
 ---
 Most of the web is text.
